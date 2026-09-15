@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.stuxapis.net/global/logo.png" height="100" alt="StuxAPIs Logo">
+  <img src="https://global.media.stuxapis.net/logo.png" height="100" alt="StuxAPIs Logo">
 </p>
 
 # GitHub Pages Redirect
