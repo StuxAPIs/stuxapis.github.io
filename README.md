@@ -54,6 +54,10 @@ Replace `https://example.com` with your actual domain.
 - **Need to change the redirect delay?** Modify the `content="0;url=..."` value (0 = immediate)
 - **Want to customize the loading page?** Edit the HTML content before the meta redirect tag
 
+## Versioning
+
+This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
+
 ## License
 
 Feel free to use this template for your own projects!
