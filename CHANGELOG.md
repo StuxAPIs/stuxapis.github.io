@@ -4,6 +4,17 @@ All notable changes to stuxapis.github.io are documented here.
 
 Each release's sections follow a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-1
+
+### Added
+
+- `.github/workflows/ci.yml`, running `bash tests/version.sh` on pushes to `main` and `test` and on every pull request
+
+### Changed
+
+- `commit.sh` and `commit.bat` end by saying to push `test` and open a pull request into `main`
+- README (Versioning) and CONTRIBUTING (a new Branches section) describe the `test` branch flow: work and releases happen on `test`, and reach `main` only through a reviewed pull request that needs CI to pass
+
 ## v26.11.06
 
 ### Changed
