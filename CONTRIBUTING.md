@@ -19,6 +19,12 @@ python3 -m http.server 8000
 - Single static `index.html` — no framework, no build step, no backend.
 - Keep it minimal; this repo exists only to redirect GitHub Pages traffic.
 
+## Branches
+
+- Work on `test`, or on a branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Release commits and tags are made on `test` (`git push origin test --tags`) and take effect when the pull request is merged. Merging deploys the redirect to GitHub Pages.
+
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing). To release:
