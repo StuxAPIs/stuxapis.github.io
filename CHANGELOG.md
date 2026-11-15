@@ -4,6 +4,12 @@ All notable changes to stuxapis.github.io are documented here.
 
 Each release's sections follow a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15
+
+### Changed
+
+- Releases now go live in two steps, each through a pull request: `test` into `staging`, then `staging` into `main`. `staging` is a new branch made from `main`, and nothing is pushed to `staging` or `main` directly. `commit.sh` / `commit.bat` refuse to run on `staging` or `main`, and print the push command and both `gh pr create` commands. CI also runs on `staging`. CONTRIBUTING's "Branches and going live" section and the README describe it
+
 ## v26.11.06-1
 
 ### Added
